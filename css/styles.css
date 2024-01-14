@@ -153,6 +153,7 @@ address {font-style: normal;}
     background-size: cover;
     max-width: 1440px;
     background-position: center;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -208,6 +209,11 @@ address {font-style: normal;}
     align-items: center;
     justify-content: center;
     height: 112px;
+    padding: 24px 100px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -228,14 +234,6 @@ address {font-style: normal;}
     gap: 24px;
 }
 
-.icon-background {
-    padding: 24px 100px;
-    background-color: #F4F4FD;
-    border-radius: 4px;
-    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
-    margin-bottom: 8px;
-
-}
 
 .features-list-item {
     width: calc((100% - 72px) / 4);
@@ -355,7 +353,7 @@ address {font-style: normal;}
     row-gap: 48px;
 }
 
-.portfolio-title {
+.portfolio-title{
     color: #2E2F42;
     text-align: center;
     font-size: 36px;
@@ -367,8 +365,12 @@ address {font-style: normal;}
 }
 
 
-.portfolio-text-wrap {
+.portfolio-img-text {
     position: absolute;
+    color: #F4F4FD;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     top: 0;
     background: #4D5AE5;
     height: 100%;
@@ -384,16 +386,11 @@ position: relative;
 overflow:hidden;
 }
 
-.portfolio-item-picture:hover .portfolio-text-wrap {
+.portfolio-item-picture:hover .portfolio-img-text {
 transform: translateY(0%);
 }
 
-.portfolio-img-text {
-    color: #F4F4FD;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
+
 
 .portfolio-item-info {
     padding: 32px 16px;
@@ -414,6 +411,8 @@ transform: translateY(0%);
 .portfolio-item-picture {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+
 
 .portfolio-item-description {
     line-height: 1.5;
